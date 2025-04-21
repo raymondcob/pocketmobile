@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pocket Mobile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="icon" type="image/png" href="imgs/Logo.png" />
+
+
+  <style>
+    
+    .logo-img {
+      height: 50px;
+      width: 50px;
+    }
+
+    .navbar {
+      -webkit-box-shadow: -3px 13px 31px -3px rgba(18, 8, 8, 1);
+      -moz-box-shadow: -3px 13px 31px -3px rgba(18, 8, 8, 1);
+      box-shadow: -3px 13px 31px -3px rgba(18, 8, 8, 1);
+      background-color: #faab1a;
+    }
+
+    .navbar-nav,
+    .nav-link {
+      font-weight: 500;
+    }
+
+    .section-backround {
+      background: linear-gradient(45deg, #faab1a, #0fb0da);
+      height: 80vh;
+      animation: color 12s linear infinite;
+      background-size: 200% 200%;
+    }
+
+    @keyframes color {
+      0% {
+        background-position: 0 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+
+
+    .line {
+      width: 60px;
+      height: 4px;
+      background-color: #faab1a;
+      margin: 0 auto;
+    }
+
+    .location {
+      color: white;
+      font-size: 30px;
+      margin-bottom: 80px;
+    }
+
+    .location a {
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+    }
+
+    .card-body-location {
+      background-color: #212529;
+    }
+
+    .card-location {
+      border: none;
+    }
+
+
+    .iconbox {
+      width: 60px;
+      height: 60px;
+      background-color: grey;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      margin: 0 auto;
+      font-size: 30px;
+      border-radius: 10px;
+    }
+
+    .services {
+      -webkit-box-shadow: -17px 18px 25px -11px rgba(59, 59, 59, 1);
+      -moz-box-shadow: -17px 18px 25px -11px rgba(59, 59, 59, 1);
+      box-shadow: -17px 18px 25px -11px rgba(59, 59, 59, 1);
+      border: 3px solid #faab1a;
+      border-radius: 10px;
+      transition: all 2s ease-out 0s;
+      background-color: transparent;
+      color: white;
+    }
+
+    .services:hover {
+      background-color: #faab1a;
+      color: black;
+      transform: scale(1.1, 1.1);
+    }
+
+    footer {
+      border-top: 1px solid white;
+      margin-top: 50px;
+    }
+
+    .social-icons a {
+      font-size: 30px;
+      color: #faab1a;
+      padding-right: 37px;
+    }
+
+    .social-icons a:hover {
+      color: grey;
+    }
+  </style>
+</head>
+
+<body class="bg-dark">
+  <!-- Navbar-->
+
+  <nav class="navbar navbar-expand-lg  sticky-top">
+    <div class="container-fluid">
+      <a href="index.html">
+        <img src="imgs/Logo.png" alt="Pocket Mobile Logo" class="logo-img" /></a>
+        <h4 style="background: linear-gradient( #86CEFA, #003396);background-clip: text; color: transparent;">Pocket
+         Mobile </h4>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="pages/Electronics.html">Electronics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/Cases.html"> Cases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/Chargers.html">Chargers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/Glass.html">Tempered Glass</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/Other.html">Other Acessories</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner -->
+
+  <section class="section-backround">
+    <div class="container">
+      <div class="row" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-12">
+          <div class="d-flex justify-content-center align-items-center mt-5">
+            <img src="imgs/Logo.png" style="height: 300px; width: 300px ; " />
+          </div>
+          <h1 class="text-center text-dark text-uppercase mt-2 display-3">
+            Pocket Mobile
+          </h1>
+          <h3 class="text-center text-lead text-dark mt-2 mb-4  display-6">
+            Your Future Devices and Acessories!
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Us Section -->
+
+  <section>
+    <div class="container">
+      <div class="row" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-12 mb-5">
+          <h1 class="text-center text-light mt-4">About Us</h1>
+          <div class="line" data-aos="fade-right" data-aos-duration="1000"></div>
+          <p class="text-center text-light mt-4">
+            Pocket Mobile is a cutting-edge mobile technology company that is dedicated to providing innovative
+            solutions to mobile users around the world.
+          </p>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-lg-6 mb-2 d-flex justify-content-center align-items-center " data-aos="fade-right"
+          data-aos-duration="1000">
+          <div class="card mt-5 me-4 card-location">
+            <div class="card-img-top ">
+              <img src="imgs/Location.jpg" class="img-fluid location-img" />
+            </div>
+            <div class="card-body card-body-location text-center text-light">
+              <h2>Our Location</h2>
+              <div class="location">
+                <i class="bi bi-geo-fill"></i>
+                <a href="https://maps.app.goo.gl/abDC3WPDWWyfmPp69" target="_blank" class="text-start">Corner St.Peters
+                  and Progress St,
+                  Orange Walk, Belize</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1000">
+          <h2 class="text-center text-light mt-2 mb-4">About PocketMobile</h2>
+          <p class="text-center text-light mt-2 p-3 " style="font-size: 17px;">
+            Welcome to Pocket Mobile, where simplicity meets innovation! We're on a mission to make technology
+            accessible and enjoyable for everyone. With a focus on creativity and customer satisfaction, we're
+            constantly exploring new technologies and trends in the mobile industry to stay ahead of the curve.
+            At Pocket Mobile, we don't just fix phones - we're experts in repairing a wide range of devices, including
+            smartphones, tablets, and laptops. Our skilled technicians are experienced in diagnosing and fixing issues
+            efficiently, so you can get back to using your favorite gadgets without any hassle.
+            But that's not all! We also offer a carefully curated selection of the latest mobile devices, accessories,
+            and gadgets to enhance your tech experience. Whether you're looking for a new smartphone, a sleek laptop, or
+            the perfect accessory to complement your device, Pocket Mobile has you covered.
+            Trust us to provide top-notch repairs and offer a diverse range of technology products to meet all your tech
+            needs. Visit us today to discover the next level of mobile technology solutions.
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+
+  <section class="p-4 border-top bg-dark">
+    <div class="container">
+      <div class="row text-center text-light mt-5 mb-5" data-aos="fade-right" data-aos-duration="1000">
+        <div class="col-12">
+          <h1>Our Services</h1>
+          <div class="line" data-aos="fade-right" data-aos-duration="1000"></div>
+          <p class="mt-3">
+            Pocket Mobile offers a wide range of mobile services including phone repairs, screen replacements,
+            accessories, and phone unlocking. Our experienced technicians are dedicated to providing fast and reliable
+            service to all our customers.
+          </p>
+        </div>
+      </div>
+
+      <div class="row" data-aos="fade-right" data-aos-duration="1000">
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="bi bi-usb-micro"></i>
+              </div>
+              <h6 class="mt-3 mb-2 text-center">Charger-Port Replacement</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+              <h6 class="mt-3 mb-2 text-center">Screen Replacement</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="fa-solid fa-battery-quarter"></i>
+              </div>
+              <h6 class="mt-3 mb-2 text-center">Battery Replacement</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4" data-aos="fade-right" data-aos-duration="1000">
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="bi bi-camera2"></i>
+              </div>
+              <h6 class="mt-3 mb-1 text-center">iPhone-Camera Lens Repair</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="bi bi-phone-flip"></i>
+              </div>
+              <h6 class="mt-3 mb-1 text-center">
+                iPhone Housing Replacement
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="bi bi-menu-button"></i>
+              </div>
+              <h6 class="mt-3 mb-1 text-center">
+                Home & Power button repairs/replacement
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4" data-aos="fade-right" data-aos-duration="1000">
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="fa-solid fa-unlock"></i>
+              </div>
+              <h6 class="mt-3 mb-2 text-center">Carrier & Google Unlock</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="bi bi-cloud-fill"></i>
+              </div>
+              <h6 class="mt-3 mb-2 text-center">
+                iCloud Account Installation
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="bi bi-truck"></i>
+              </div>
+              <h6 class="mt-3 mb-2 text-center">Special Orders</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4" data-aos="fade-right" data-aos-duration="1000">
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="bi bi-tv-fill"></i>
+              </div>
+              <h6 class="mt-3 mb-2 text-center">Firestick Programming</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="bi bi-sim-fill"></i>
+              </div>
+              <h6 class="mt-3 mb-2 text-center">SIM Card</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="fa-solid fa-sim-card"></i>
+              </div>
+              <h6 class="mt-3 mb-2 text-center">iPhone RSIM Unlock</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4" data-aos="fade-right" data-aos-duration="1000">
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="bi bi-google"></i>
+              </div>
+              <h6 class="mt-3 mb-2 text-center">
+                Google Account Installation
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="bi bi-braces"></i>
+              </div>
+              <h6 class="mt-3 mb-2 text-center">Computer Programming</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-2 d-flex justify-content-center">
+          <div class="card w-75 services">
+            <div class="card-body">
+              <div class="iconbox">
+                <i class="bi bi-cash"></i>
+              </div>
+              <h6 class="mt-3 mb-2 text-center">Layaway</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--FOOTER -->
+
+  <footer class="text-center bg-body-dark">
+
+    <div class="container pt-2 ">
+
+      <section class="mb-4 mt-2 text-center social-icons">
+
+        <a href="https://www.facebook.com/PocketMobile" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://wa.me/5016556582" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="mailto:fabgalindo1234569@gmail.com" target="_blank"><i class="bi bi-envelope"></i></a>
+
+      </section>
+    </div>
+
+
+    <!-- Copyright -->
+    <div class="text-center mb-3 text-light">
+      © 2024 Copyright: JRBV Developers
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
